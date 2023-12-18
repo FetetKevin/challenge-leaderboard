@@ -1,0 +1,141 @@
+:root {
+    --dark-bg: #333;
+    --white: #fff;
+    --soft-bg: #e5c9c5;
+    --error: #ea3323;
+    --date: #a89ca3;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-bg);
+}
+
+.container {
+    width: 70%;
+    margin: 60px auto;
+}
+
+h1,
+.input-field,
+.error-msg {
+    text-align: center;
+}
+
+h1 {
+    color: var(--white);
+    margin: 60px 0;
+}
+
+.input-field {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+input,
+.submit {
+    width: 12.3rem;
+    outline: none;
+    padding: 7px;
+    font-size: 24px;
+    border: 1px solid var(--soft-bg);
+}
+
+input {
+    background-color: var(--dark-bg);
+    color: var(--soft-bg);
+}
+
+input:focus {
+    outline: 1.2px solid var(--soft-bg);
+}
+
+.submit {
+    background-color: var(--soft-bg);
+    color: var(--dark-bg);
+    cursor: pointer;
+}
+
+.error-msg {
+    margin: 20px 0 40px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--error);
+}
+
+ul {
+    width: 80%;
+    margin: 0 auto;
+}
+
+li {
+    display: flex;
+    color: var(--white);
+    border: 1px solid var(--soft-bg);
+    align-items: center;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+h2,
+h3 {
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+}
+
+h3 {
+    color: var(--date);
+    font-size: 0.7rem;
+    letter-spacing: 0.15rem;
+}
+
+.name-date {
+    width: 40%;
+    padding-right: 12px;
+    line-height: 1;
+    margin-left: 12px;
+}
+
+h2:nth-child(2) {
+    width: 20%;
+}
+
+h2:nth-child(3) {
+    width: 10%;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.action-btn {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 12px;
+    border: none;
+    outline: 2px solid var(--soft-bg);
+    border-radius: 50%;
+    font-size: 12px;
+    background-color: var(--dark-bg);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background-color: var(--soft-bg);
+    color: var(--dark-bg);
+}
